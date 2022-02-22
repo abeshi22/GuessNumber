@@ -2,24 +2,13 @@
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 
-let answer = "";            //正解の単語
-let correctAnswer = false;  //解答状況フラグ
-let alphabet = "";          //未使用文字
-let mistakeCount = 0;       //誤答回数
 
-let answerWord = ["BOY", "CAT", "FOX", "HAT", "TEN", 
-                "BABY", "GIRL", "HEAT", "LION", "WOLF", 
-                "TIGER", "ZEBRA", 
-                "FATHER", "MOTHER", 
-                "PENGUIN", 
-                "ELEPHANT"
-                ];
+
 
 
 // 答えの設定
 function setAnswer(){
-    answer = answerWord[Math.floor(Math.random()*answerWord.length)];
-    console.log(answer);
+    
 }
 
 

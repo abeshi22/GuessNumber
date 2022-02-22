@@ -1,14 +1,34 @@
 
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
+let answer = 0;
+let turn = 0;
+let rader = new Array(100);
 
 
-
-
+function drawRader(){
+    for(let i=0; i<100 ;i++){
+        if(rader[i]==true){
+            ctx.beginPath();
+            ctx.rect(5*i+10,20,4,30);
+            ctx.fillStyle = "#00ff00";
+            ctx.fill();
+            ctx.closePath();
+        }
+    }
+    ctx.font = "16px Arial";
+    ctx.fillStyle = "#000000";
+    ctx.fillText("0", 5, 15);
+    ctx.fillText("99",500,15);
+}
 
 // 答えの設定
 function setAnswer(){
-    
+    answer = Math.floor(Math.random()*100);
+    turn = 0;
+    for (let i=0; i<100; i++){
+        rader[i] = true;
+    }
 }
 
 

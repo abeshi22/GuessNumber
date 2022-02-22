@@ -7,7 +7,6 @@ canvas {
     background: #eee;
     display:block;
     margin: 30px auto 10px auto;
-    border-radius: 10px;
 }
 
 
@@ -16,7 +15,6 @@ h1 {
     background-color: rgb(247, 189, 229);
     width: 500px;
     margin: 0 auto;
-    border-radius: 10px;
 }
 div {
     text-align: center;
@@ -25,39 +23,43 @@ p {
     margin: 5px auto;
 }
 
-
-#life {
-    font-family: "メイリオ";
-    font-size: 24px;
-    /* background-color: red; */
-    margin: 50px auto -20px -300px;
-}
-
 #hint {
     width: 500px;
     height: 250px;
     margin: 0 auto 20px auto;
     background-color: rgb(170, 237, 245);
-    border-radius: 5px;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 }
 
-
+#input_answer {
+    height: 100px;
+    width: 100px;
+    margin-right: 50px;
+    padding: 0 20px;
+    font-size: 90px;
+    text-align: right;
+}
 .submit_answer {
-    margin: 10px auto 0 auto;
-    text-align: center  ;
-}
-.submit_answer input {
+    vertical-align: bottom;
     font-size: 25px;
-    width: 30px;
     height: 50px;
-    padding: 0;
 }
 
-.submit_giveup {
+.submit_reset {
     vertical-align: bottom;
     font-size: 20px;
     height: 50px;
-    margin-top: 20px;
-    margin-left: 250px;
+    margin-left: 50px;
+}
+
+.guess_number {
+    margin: 50px auto 0 auto;
+    text-align: center  ;
+
+    /* display: flex; */
+}
+.guess_number input {
+    font-size: 25px;
+    width: 30px;
+    height: 50px;
 }

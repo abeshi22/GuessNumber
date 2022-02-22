@@ -29,23 +29,17 @@ p {
 #life {
     font-family: "メイリオ";
     font-size: 24px;
+    /* background-color: red; */
     margin: 50px auto -20px -300px;
 }
 
-#hint1 {
+#hint {
     width: 500px;
-    height: 100px;
-    margin: 0 auto;
+    height: 250px;
+    margin: 0 auto 20px auto;
     background-color: rgb(170, 237, 245);
-    border-radius: 5px 5px 0 0;
-}#hint2 {
-    width: 500px;
-    height: 50px;
-    margin: 0 auto 50px auto;
-    background-color: rgb(170, 237, 245);
-    border-radius: 0 0 5px 5px;
-    font-size: 24px;
-    letter-spacing: 1em;
+    border-radius: 5px;
+    /* overflow-y: scroll; */
 }
 
 
@@ -58,20 +52,12 @@ p {
     width: 30px;
     height: 50px;
     padding: 0;
-    /* background-color: #dddddd; */
 }
 
-.submit_giveup{
+.submit_giveup {
     vertical-align: bottom;
     font-size: 20px;
     height: 50px;
     margin-top: 20px;
-    margin-left: 200px;
-}
-.submit_reset{
-    vertical-align: bottom;
-    font-size: 20px;
-    height: 50px;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 250px;
 }
